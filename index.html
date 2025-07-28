@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ignomínia Z-ΩΔ</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', sans-serif;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid #00ffff44;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 600px;
+      box-shadow: 0 0 15px #00ffe044;
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffff;
+      margin-bottom: 15px;
+    }
+
+    p.enigma {
+      font-style: italic;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #00ffff;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #00cccc;
+    }
+
+    .error {
+      color: #ff4d4d;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧩 Fragmento Perdido do Código: Z-ΩΔ</h1>
+    <p class="enigma">
+      A chave não se forja sem o Julgamento.<br>
+      Quando os ecos do <b>nono elo</b> forem ouvidos,<br>
+      e a passagem do <b>caminho enigmático</b> for encontrada,<br>
+      apenas os escolhidos saberão onde provar seu valor.<br><br>
+
+      🗝️ <i>Somente onde os guardiões da desordem se reúnem, o verdadeiro portão será revelado...</i><br><br>
+
+      ➤ Decifre:<br>
+      “K de conhecimento, Z de zelo, P de prova,<br>
+      F de fé, M de missão, 9 irmãos, Q de quem ousa,<br>
+      6 sombras, W de vontade, J de julgamento.”<br><br>
+
+      <b>Junte-os e ache o elo de entrada.</b>
+    </p>
+
+    <input type="text" id="inputLink" placeholder="Insira o elo oculto aqui...">
+    <button onclick="verificarLink()">Desbloquear Acesso</button>
+    <div id="mensagemErro" class="error"></div>
+  </div>
+
+  <script>
+    function verificarLink() {
+      const entrada = document.getElementById("inputLink").value.trim();
+      const correto = "https://discord.gg/Kzpfm9q6Wj";
+
+      if (entrada === correto) {
+        window.open("https://verificado-zeus-executor-ilpv.vercel.app", "_blank");
+      } else {
+        document.getElementById("mensagemErro").textContent = "O elo está incorreto. Reavalie os fragmentos...";
+      }
+    }
+  </script>
+</body>
+</html>
